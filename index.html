@@ -1,0 +1,48 @@
+<style>
+  p{
+    color: #444444;
+  }
+  pre {
+    white-space: pre-wrap;
+  }
+  .input{
+    background-color: #888888;
+    color: white;
+    padding: 5px;
+  }
+  .result {
+    padding: 10px;
+    background-color: #444444;
+    color: white;
+  }
+</style>
+
+<h4>Implementar o método Promise.all.</h4>
+<p>
+  Sua função deve receber um array de promises e retornar uma única promisse que resolve quando todas as promisses do array resolverem. A promise retornada deve resolver com um array com o resultado de todas as promisses recebidas, na devida ordem.
+</p>
+<p>Exemplo:</p>
+<pre>
+  promiseAll([promise1, promise2, promise3]).then(res => {
+    console.log(res[0]);// resultado de promise1
+    console.log(res[1]);// resultado de promise2
+    console.log(res[2]);// resultado de promise3
+  }));
+</pre>
+<div>Dicas:</div>
+<ul> 
+  <li> criando uma nova <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/Promise">Promise</a>;</li>
+  <li> como funciona <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all">Promise.all</a>;</li>
+</ul>
+</ul>
+<p>
+  <strong>OBS1: apresentar 2 soluções: com e sem async/await;</strong>  
+</p>
+<p>
+  <strong>OBS2: não é preciso tratar casos de erro e catch;</strong>  
+</p>
+<p>
+  <strong>OBS3: não utilizar Promise.all();</strong> <img width="24" height="24" src="https://i.imgflip.com/hypd1.jpg" />
+</p>
+
+<div id="results" />
